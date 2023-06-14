@@ -5,6 +5,7 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai"
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
 import { BsPersonLinesFill } from "react-icons/bs"
 import { useState, useEffect } from "react"
+import YearLottie from "./YearLottie"
 
 function Nav() {
   const [nav, setNav] = useState(false)
@@ -42,7 +43,7 @@ function Nav() {
       <nav
         className={
           shadow
-            ? "fixed w-full h-20 shadow-xl z-[100]"
+            ? "fixed w-full h-20 shadow-xl z-[100] bg-[#1B2430]"
             : "fixed w-full h-20  z-[100] "
         }
       >
@@ -54,8 +55,9 @@ function Nav() {
             width="50"
             height="50"
           /> */}
-          <div>
-            <p>Zeljko Haberstok</p>
+          <div className="flex items-center">
+            <p className="text-2xl mr-2">Zeljko Haberstok</p>
+            <YearLottie />
           </div>
           <div>
             <ul className="hidden md:flex">

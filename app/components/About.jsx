@@ -1,7 +1,8 @@
 "use client"
-import Image from "next/image"
+
 import React from "react"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 function About() {
   return (
@@ -127,7 +128,7 @@ function About() {
             }}
             className="py-2 text-gray-400 underline cursor-pointer "
           >
-            Check out some of my projects
+            <Link href="/#projects"> Check out some of my projects</Link>
           </motion.p>
         </div>
         {/* <div className="w-full h-[300px] mt-12 md:m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 relative ">
