@@ -10,7 +10,14 @@ function SkillItem({ image, width, height, title, alt, fill, relative, icon }) {
   const imageComp = icon ? (
     icon
   ) : (
-    <Image src={image} width={width} height={height} alt={alt} fill={fill} />
+    <Image
+      src={image}
+      width={width}
+      height={height}
+      alt={alt}
+      fill={fill}
+      className="h-auto"
+    />
   )
 
   return (

@@ -15,16 +15,16 @@ function Nav() {
   }
 
   const handleScroll = (e) => {
-    // first prevent the default behavior
     e.preventDefault()
-    // get the href and remove everything before the hash (#)
-    const href = e.currentTarget.href
+
+    const href = e.currentTarget.getAttribute("href")
     const targetId = href.replace(/.*\#/, "")
-    // get the element by id and use scrollIntoView
+
     const elem = document.getElementById(targetId)
     elem?.scrollIntoView({
       behavior: "smooth"
     })
+    history.pushState(null, null, `#${targetId}`)
   }
 
   useEffect(() => {
@@ -48,13 +48,6 @@ function Nav() {
         }
       >
         <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16  ">
-          {/* <Image
-            className="rounded-full  h-16 w-16 object-cover"
-            src="/zeljko-picture.png"
-            alt="logo"
-            width="50"
-            height="50"
-          /> */}
           <div className="flex items-center">
             <p className="text-2xl mr-2">Zeljko Haberstok</p>
             <YearLottie />
@@ -141,7 +134,7 @@ function Nav() {
             </div>
             <div className="py-4 flex flex-col">
               <ul className="uppercase ">
-                <Link href="/">
+                <Link href="/#home">
                   <li onClick={handleNav} className="py-4 text-sm">
                     Home
                   </li>

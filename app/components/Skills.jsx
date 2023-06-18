@@ -24,28 +24,28 @@ function Skills() {
           <SkillItem
             image="/assets/html.png"
             width={64}
-            height={64}
+            height={0}
             title="HTML"
             alt="html"
           />
           <SkillItem
             image="/assets/css.png"
             width={42}
-            height={42}
+            height={0}
             title="CSS"
             alt="css"
           />
           <SkillItem
             image="/assets/react.png"
             width={64}
-            height={64}
+            height={0}
             title="REACT"
             alt="react"
           />
           <SkillItem
             image="/assets/angular.png"
             width={64}
-            height={64}
+            height={0}
             title="ANGULAR"
             alt="angular"
           />
@@ -59,7 +59,7 @@ function Skills() {
           <SkillItem
             image="/assets/mysql.png"
             width={64}
-            height={64}
+            height={0}
             title="MYSQL"
             alt="mysql"
           />
@@ -72,7 +72,7 @@ function Skills() {
           <SkillItem
             image="/assets/redux.png"
             width={64}
-            height={64}
+            height={0}
             title="REDUX"
             alt="redux"
           />
