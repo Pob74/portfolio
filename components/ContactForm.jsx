@@ -49,7 +49,7 @@ function ContactForm() {
   }
 
   return (
-    <form>
+    <form className="text-gray-800">
       <div className="grid md:grid-cols-2 gap-4 w-full  py-2">
         <motion.div {...animationConfig} className="flex flex-col">
           <label className="uppercase text-sm py-2">Name</label>

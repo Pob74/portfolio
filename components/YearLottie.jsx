@@ -2,7 +2,7 @@
 
 import React from "react"
 import Lottie from "lottie-react"
-import animationData from "../../public/assets/yearAnimation.json"
+import animationData from "../public/assets/yearAnimation.json"
 
 function Test() {
   return (

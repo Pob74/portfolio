@@ -19,12 +19,12 @@ function ContactLeft({ image }) {
     <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
       <div className="lg:p-4 h-full ">
         <motion.div {...animationConfig}>
-          {/* <Image
+          <Image
             className="rounded-xl hover:scale-105 ease-in duration-300 min-w-[80%] mx-auto"
             src={image}
             alt="contact"
-          /> */}
-          <ContactLottie />
+          />
+          {/* <ContactLottie /> */}
         </motion.div>
         <motion.div {...animationConfig}>
           <h2 className="py-2">Zeljko Haberstok </h2>
