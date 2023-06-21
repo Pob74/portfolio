@@ -49,7 +49,9 @@ function Nav() {
       >
         <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16  ">
           <div className="flex items-center">
-            <p className="text-2xl mr-2">Zeljko Haberstok</p>
+            <p className="text-sm md:text-lg lg:text-2xl mr-2">
+              Zeljko Haberstok
+            </p>
             <YearLottie />
           </div>
           <div>

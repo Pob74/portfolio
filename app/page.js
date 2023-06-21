@@ -1,3 +1,4 @@
+import ScrollUp from "@/components/ScrollUp"
 import About from "../components/About"
 import Contact from "../components/Contact"
 import Main from "../components/Main"
@@ -12,6 +13,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Contact />
+      <ScrollUp />
     </>
   )
 }

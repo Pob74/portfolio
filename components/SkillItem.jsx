@@ -16,7 +16,8 @@ function SkillItem({ image, width, height, title, alt, fill, relative, icon }) {
       height={height}
       alt={alt}
       fill={fill}
-      className="h-auto"
+      className="h-auto w-auto"
+      sizes="100vw"
     />
   )
 

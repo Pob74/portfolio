@@ -3,7 +3,7 @@ import Image from "next/image"
 import React from "react"
 import { AiOutlineMail } from "react-icons/ai"
 import { BsPersonLinesFill } from "react-icons/bs"
-import { FaGithub, FaLinkedinIn } from "react-icons/fa"
+import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa"
 import { motion } from "framer-motion"
 import Link from "next/link"
 
@@ -24,9 +24,9 @@ function Main() {
           priority={false}
         />
       </motion.div>
-      <div className="max-w-[1240px] w-full h-[calc(100vh-80px)] m-auto p-12 lg:p-2 flex justify-center items-center">
+      <div className="max-w-[1240px] w-full h-[calc(100vh-80px)] m-auto p-12 lg:p-2 flex justify-center items-center ">
         <div>
-          <p className="uppercase text-sm tracking-widest text-gray-400 ">
+          <p className="uppercase text-sm tracking-widest text-gray-400 mt-16 md:mt-0 ">
             Let&rsquo;s build something together
           </p>
           <h1 className="py-4 text-gray-300">
@@ -55,6 +55,15 @@ function Main() {
               </div>
             </Link>
             <Link
+              href="https://www.facebook.com/pobjednik/"
+              passHref
+              target="_blank"
+            >
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                <FaFacebookF />
+              </div>
+            </Link>
+            <Link
               href="mailto:zeljkohaberstok@gmail.com?subject=Hello%20Zeljko&body=I%20am%20conntacting%20you%20from%20your%20website."
               passHref
               target="_blank"
@@ -63,9 +72,6 @@ function Main() {
                 <AiOutlineMail />
               </div>
             </Link>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-              <BsPersonLinesFill />
-            </div>
           </div>
         </div>
       </div>

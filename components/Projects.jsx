@@ -27,22 +27,26 @@ function Projects() {
         <div className="grid md:grid-cols-2 gap-8 ">
           <ProjectItem
             image={jurnalImage}
-            title="Project name"
+            title="Your Jurnal"
+            framework="React JS"
             projectUrl="/project"
           />
           <ProjectItem
             image={netflixImage}
-            title="Project name"
+            title="Netflix Clone"
+            framework="React JS"
             projectUrl="/project"
           />
           <ProjectItem
             image={spotifyImage}
-            title="Project name"
+            title="Spotify Clone"
+            framework="Next JS"
             projectUrl="/project"
           />
           <ProjectItem
             image={amazonImage}
-            title="Project name"
+            title="Amazon Clone"
+            framework="Next JS"
             projectUrl="/project"
           />
         </div>

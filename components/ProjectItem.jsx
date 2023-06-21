@@ -4,7 +4,7 @@ import Link from "next/link"
 import React from "react"
 import { motion } from "framer-motion"
 
-function ProjectItem({ image, title, projectUrl }) {
+function ProjectItem({ image, title, framework, projectUrl }) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -20,7 +20,7 @@ function ProjectItem({ image, title, projectUrl }) {
         <h3 className="text-2xl text-white tracking-wider text-center">
           {title}
         </h3>
-        <p className="pb-4 pt-2 text-white text-center ">React JS</p>
+        <p className="pb-4 pt-2 text-white text-center ">{framework}</p>
 
         <Link href="/">
           <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">

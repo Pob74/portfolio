@@ -5,14 +5,16 @@ import { motion } from "framer-motion"
 import { sendContactForm } from "@/lib/api"
 
 const initValues = { name: "", phone: "", email: "", subject: "", message: "" }
-const initState = { values: initValues }
+const initState = { isLoading: false, values: initValues }
 
 function ContactForm() {
   const [state, setState] = useState(initState)
+  const [isSent, setIsSent] = useState(false)
+  const [isDisabled, setIsDisabled] = useState(true)
 
-  const { values } = state
+  const { values, isLoading } = state
 
-  const handleChange = ({ target }) =>
+  const handleChange = ({ target }) => {
     setState((prev) => ({
       ...prev,
       values: {
@@ -20,6 +22,11 @@ function ContactForm() {
         [target.name]: target.value
       }
     }))
+    setIsDisabled(
+      !values.name || !values.email || !values.subject || !values.message
+    )
+    setIsSent(false)
+  }
 
   const animationConfig = {
     initial: { opacity: 0 },
@@ -32,16 +39,17 @@ function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setState((prev) => ({
-      ...prev
+      ...prev,
+      isLoading: true
     }))
     try {
       await sendContactForm(values)
-
+      setIsSent(true)
       setState(initState)
-      alert("Message sent successfully")
     } catch (error) {
       setState((prev) => ({
         ...prev,
+        isLoading: false,
 
         error: error.message
       }))
@@ -49,12 +57,12 @@ function ContactForm() {
   }
 
   return (
-    <form className="text-gray-800">
+    <form>
       <div className="grid md:grid-cols-2 gap-4 w-full  py-2">
         <motion.div {...animationConfig} className="flex flex-col">
-          <label className="uppercase text-sm py-2">Name</label>
+          <label className="uppercase text-sm py-2 ">Name</label>
           <input
-            className="border-2 rounded-lg p-3 flex border-gray-300"
+            className="border-2 rounded-lg p-3 flex border-gray-300 text-gray-800"
             type="text"
             required
             name="name"
@@ -65,7 +73,7 @@ function ContactForm() {
         <motion.div {...animationConfig} className="flex flex-col">
           <label className="uppercase text-sm py-2">Phone</label>
           <input
-            className="border-2 rounded-lg p-3 flex border-gray-300"
+            className="border-2 rounded-lg p-3 flex border-gray-300 text-gray-800"
             type="text"
             required
             name="phone"
@@ -77,7 +85,7 @@ function ContactForm() {
       <motion.div {...animationConfig} className="flex flex-col py-2">
         <label className="uppercase text-sm py-2">Email</label>
         <input
-          className="border-2 rounded-lg p-3 flex border-gray-300"
+          className="border-2 rounded-lg p-3 flex border-gray-300 text-gray-800"
           type="email"
           required
           name="email"
@@ -88,7 +96,7 @@ function ContactForm() {
       <motion.div {...animationConfig} className="flex flex-col py-2">
         <label className="uppercase text-sm py-2">Subject</label>
         <input
-          className="border-2 rounded-lg p-3 flex border-gray-300"
+          className="border-2 rounded-lg p-3 flex border-gray-300 text-gray-800"
           type="text"
           required
           name="subject"
@@ -99,7 +107,7 @@ function ContactForm() {
       <motion.div {...animationConfig} className="flex flex-col py-2">
         <label className="uppercase text-sm py-2">Message</label>
         <textarea
-          className="border-2 rounded-lg p-3 border-gray-300 "
+          className="border-2 rounded-lg p-3 border-gray-300 text-gray-800 "
           rows="3"
           required
           name="message"
@@ -109,11 +117,19 @@ function ContactForm() {
       </motion.div>
       <motion.button
         {...animationConfig}
-        className="w-full p-4 text-gray-100 mt-4 "
+        className={`w-full p-4 text-gray-100 mt-4 ${
+          isDisabled ? "cursor-not-allowed line-through " : ""
+        }`}
         onClick={handleSubmit}
+        // disabled={isDisabled}
       >
-        Send Message
+        {isLoading ? <p>Sending...</p> : <p>Send Message</p>}
       </motion.button>
+      {isSent && (
+        <div className="w-full p-4 text-gray-100 mt-4 text-center ">
+          Message Sent 👍
+        </div>
+      )}
     </form>
   )
 }

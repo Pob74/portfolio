@@ -6,7 +6,7 @@ import animationData from "../public/assets/yearAnimation.json"
 
 function Test() {
   return (
-    <div className="w-[80px] h-[40px]  ">
+    <div className="w-[50px] h-[30px] lg:w-[80px] lg:h-[40px]  ">
       <Lottie
         animationData={animationData}
 

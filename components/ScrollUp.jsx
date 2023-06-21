@@ -20,7 +20,7 @@ function ScrollUp() {
   return (
     <div className="flex justify-center py-12 ">
       <Link onClick={handleScroll} href="/#home">
-        <div className=" animate-bounce rounded-full shadow-lg shadow-gray-400 p-6 my-8 cursor-pointer hover:scale-110 ease-in duration-300">
+        <div className=" animate-bounce rounded-full shadow-lg shadow-gray-400 dark:shadow-gray-400 p-6 my-8 cursor-pointer hover:scale-110 ease-in duration-300">
           <HiOutlineChevronDoubleUp className="text-[#816797]" size={30} />
         </div>
       </Link>
