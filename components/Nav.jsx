@@ -27,6 +27,19 @@ function Nav() {
     history.pushState(null, null, `#${targetId}`)
   }
 
+  // const handleScroll = (e) => {
+  //   const href = e.currentTarget.getAttribute("href")
+  //   const targetId = href.replace(/.*\#/, "")
+
+  //   const elem = document.getElementById(targetId)
+  //   if (!elem) {
+  //     e.preventDefault()
+  //     document.querySelector(href).scrollIntoView({
+  //       behavior: "smooth"
+  //     })
+  //   }
+  // }
+
   useEffect(() => {
     const handlShadow = () => {
       if (window.scrollY > 90) {

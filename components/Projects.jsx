@@ -30,24 +30,28 @@ function Projects() {
             title="Your Jurnal"
             framework="React JS"
             projectUrl="/project"
+            name="journal"
           />
           <ProjectItem
             image={netflixImage}
             title="Netflix Clone"
             framework="React JS"
             projectUrl="/project"
+            name="netflix"
           />
           <ProjectItem
             image={spotifyImage}
             title="Spotify Clone"
             framework="Next JS"
             projectUrl="/project"
+            name="spotify"
           />
           <ProjectItem
             image={amazonImage}
             title="Amazon Clone"
             framework="Next JS"
             projectUrl="/project"
+            name="amazon"
           />
         </div>
       </div>

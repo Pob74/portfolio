@@ -1,0 +1,18 @@
+{
+  "journal": {
+    "title": "Journal App for Horse Care and Invoicing",
+    "description": "A personalized journal app developed in React.js with Firebase backend to facilitate efficient horse care management and invoicing for equestrian businesses.",
+    "purpose": "The Journal App was created to streamline horse care management and invoicing for equestrian businesses. The goal was to provide a convenient and organized way for my wife, an equestrian enthusiast, to manage customer information, track horse details, and easily generate and send invoices to clients.",
+    "features": [
+      "Manage Customers: Keep track of customer information and contact details.",
+      "Invoicing System: Create and send professional invoices to customers for services rendered.",
+      "Horse Journals: Record and manage detailed information about horses, including medical history, care routines, and more.",
+      "Streamlined UI/UX: Intuitive user interface designed for easy navigation and efficient usage.",
+      "Personalized for Equestrians: Tailored to the specific needs of equestrians, making horse care management hassle-free.",
+      "User-Friendly Experience: Designed with simplicity and usability in mind to enhance user experience.",
+      "Customizable and Adaptable: Easily adaptable to varying business requirements and preferences.",
+      "Secure Data Handling: Utilizes Firebase for secure data storage, authentication, and efficient real-time updates."
+    ],
+    "audience": "This app is designed for equestrians, horse trainers, and professionals in the equestrian industry who need an efficient way to manage customer information, invoicing, and horse care details."
+  }
+}

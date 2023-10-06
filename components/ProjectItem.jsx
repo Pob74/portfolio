@@ -4,11 +4,12 @@ import Link from "next/link"
 import React from "react"
 import { motion } from "framer-motion"
 
-function ProjectItem({ image, title, framework, projectUrl }) {
+function ProjectItem({ image, title, framework, projectUrl, name }) {
+  console.log(name)
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, transition: { duration: 5 } }}
+      whileInView={{ opacity: 1, transition: { duration: 0.8 } }}
       className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#262627] to-[#404141]"
     >
       <Image
@@ -22,7 +23,7 @@ function ProjectItem({ image, title, framework, projectUrl }) {
         </h3>
         <p className="pb-4 pt-2 text-white text-center ">{framework}</p>
 
-        <Link href="/">
+        <Link href={`/project/${name}`}>
           <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
             More Info
           </p>{" "}
