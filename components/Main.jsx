@@ -9,7 +9,7 @@ import Link from "next/link"
 
 function Main() {
   return (
-    <div id="home" className="w-full h-screen text-center">
+    <div id="home" className="w-full h-screen text-center ">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, transition: { duration: 5 } }}

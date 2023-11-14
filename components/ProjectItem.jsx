@@ -9,7 +9,7 @@ function ProjectItem({ image, title, framework, projectUrl, name }) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1, transition: { duration: 0.8 } }}
+      whileInView={{ opacity: 1, transition: { duration: 2 } }}
       className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#262627] to-[#404141]"
     >
       <Image

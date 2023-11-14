@@ -14,18 +14,18 @@ function Nav() {
     setNav(!nav)
   }
 
-  const handleScroll = (e) => {
-    e.preventDefault()
+  // const handleScroll = (e) => {
+  //   e.preventDefault()
 
-    const href = e.currentTarget.getAttribute("href")
-    const targetId = href.replace(/.*\#/, "")
+  //   const href = e.currentTarget.getAttribute("href")
+  //   const targetId = href.replace(/.*\#/, "")
 
-    const elem = document.getElementById(targetId)
-    elem?.scrollIntoView({
-      behavior: "smooth"
-    })
-    history.pushState(null, null, `#${targetId}`)
-  }
+  //   const elem = document.getElementById(targetId)
+  //   elem?.scrollIntoView({
+  //     behavior: "smooth"
+  //   })
+  //   history.pushState(null, null, `#${targetId}`)
+  // }
 
   // const handleScroll = (e) => {
   //   const href = e.currentTarget.getAttribute("href")
@@ -60,7 +60,7 @@ function Nav() {
             : "fixed w-full h-20  z-[100] "
         }
       >
-        <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16  ">
+        <div className="flex justify-between items-center w-full h-full px-6 2xl:px-16  ">
           <div className="flex items-center">
             <p className="text-sm md:text-lg lg:text-2xl mr-2">
               Zeljko Haberstok
@@ -71,35 +71,35 @@ function Nav() {
             <ul className="hidden md:flex">
               <Link
                 className="ml-10 text-sm uppercase "
-                onClick={handleScroll}
+                // onClick={handleScroll}
                 href="/#home"
               >
                 Home
               </Link>
               <Link
                 className="ml-10 text-sm uppercase "
-                onClick={handleScroll}
+                // onClick={handleScroll}
                 href="/#about"
               >
                 About
               </Link>
               <Link
                 className="ml-10 text-sm uppercase "
-                onClick={handleScroll}
+                // onClick={handleScroll}
                 href="/#skills"
               >
                 Skills
               </Link>
               <Link
                 className="ml-10 text-sm uppercase "
-                onClick={handleScroll}
+                // onClick={handleScroll}
                 href="/#projects"
               >
                 Projects
               </Link>
               <Link
                 className="ml-10 text-sm uppercase "
-                onClick={handleScroll}
+                // onClick={handleScroll}
                 href="/#contact"
               >
                 Contact
