@@ -35,8 +35,18 @@ function ProductInfo() {
   //   router.push("/#projects")
   // }
 
-  const handleButtonClick = () => {
-    window.history.back()
+  // const handleBack = () => {
+  //   window.history.back()
+  // }
+
+  const getExternalProjectURL = (projectName) => {
+    const projectURLs = {
+      amazon: "https://amazon-lookalike.vercel.app/",
+      netflix: "https://netflix-clone-psi.vercel.app/",
+      spotify: "https://music-controller-sand.vercel.app/",
+      journal: "https://your-journal.vercel.app/"
+    }
+    return projectURLs[projectName] || "/"
   }
 
   if (name && projectData) {
@@ -50,7 +60,7 @@ function ProductInfo() {
           <p className="text-gray-300 mb-2">{projectData.purpose}</p>
           <ol className="list-disc ml-6">
             {projectData.features.map((feature, index) => (
-              <li className="mb-1" key={index}>
+              <li className="mb-1 cursor-text " key={index}>
                 {feature}
               </li>
             ))}
@@ -58,14 +68,16 @@ function ProductInfo() {
         </div>
 
         <div className="flex justify-center items-end">
-          <button className="px-4 py-2 mr-4 bg-blue-500 text-white hover:bg-blue-600">
-            See Project
-          </button>
-
-          <button
-            onClick={handleButtonClick}
-            className="px-4 py-2 bg-gray-200 hover:bg-gray-300"
+          <Link
+            href={getExternalProjectURL(name)}
+            target="_blank"
+            passHref
+            className="btn-link px-4 py-2 mr-4"
           >
+            See Project
+          </Link>
+
+          <button onClick={() => router.back()} className="px-4 py-2 ">
             Back
           </button>
         </div>
