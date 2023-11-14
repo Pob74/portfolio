@@ -22,14 +22,14 @@ function Skills() {
         </motion.h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <SkillItem
-            image="/assets/html.png"
+            image="/assets/html.svg"
             width={64}
             height={0}
             title="HTML"
             alt="html"
           />
           <SkillItem
-            image="/assets/css.png"
+            image="/assets/css.svg"
             width={42}
             height={0}
             title="CSS"
@@ -43,10 +43,10 @@ function Skills() {
             alt="react"
           />
           <SkillItem
-            image="/assets/angular.png"
+            image="/assets/nextjs.svg"
             width={64}
             height={0}
-            title="ANGULAR"
+            title="NEXTJS"
             alt="angular"
           />
           <SkillItem

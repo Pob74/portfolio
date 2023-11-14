@@ -1,18 +1,16 @@
 {
   "amazon": {
     "title": "Amazon-Inspired E-Commerce Platform",
-    "description": "An Amazon-inspired e-commerce platform developed using MERN stack (MongoDB, Express.js, React.js, Node.js) for robust and efficient product management and online shopping experience.",
-    "purpose": "The Amazon-like e-commerce platform was created to provide users with a seamless online shopping experience, offering a wide range of products and an intuitive interface. The project utilized MongoDB as the backend database for efficient product storage and retrieval.",
+    "description": "Explore this Amazon-inspired e-commerce platform showcasing advanced features developed using Next.js, Firebase, and Stripe payment integration. This project highlights expertise in implementing a robust shopping cart and seamless payment experience for online shoppers.",
+    "purpose": "Crafted to deliver a top-notch online shopping experience, this e-commerce platform offers a vast product range and an intuitive interface. Leveraging Firebase for user authentication and MongoDB for efficient product storage, the project emphasizes the implementation of a secure shopping cart and streamlined checkout process through Stripe.",
     "features": [
-      "User Authentication and Profiles: Secure user authentication and the ability to create and manage personalized profiles.",
-      "Product Catalog: Extensive product catalog with categories, filters, and search functionality for easy product discovery.",
-      "Shopping Cart and Checkout: User-friendly shopping cart system with a smooth and efficient checkout process.",
-      "Order Management: Track and manage orders, order history, and delivery details.",
-      "Seller Dashboard: Dedicated dashboard for sellers to manage products, orders, and inventory.",
-      "Responsive Design: Optimized for various devices, ensuring a consistent and user-friendly shopping experience.",
-      "Reviews and Ratings: Allow users to rate and review products for better purchasing decisions.",
-      "Real-time Updates: Utilizes MongoDB for real-time updates on product availability and order status."
+      "Secure User Authentication and Profiles: Robust user authentication and personalized profile management.",
+      "Extensive Product Catalog: Discover a diverse product catalog with categories, filters, and powerful search functionality.",
+      "Efficient Shopping Cart and Checkout: User-friendly cart system and a smooth, secure checkout process with Stripe.",
+      "Order Management: Easily track and manage orders, order history, and delivery details.",
+      "Responsive Design: Optimized for diverse devices, ensuring a consistent and user-friendly shopping experience.",
+      "Product Reviews and Ratings: Enable users to provide feedback through product reviews and ratings."
     ],
-    "audience": "This application targets online shoppers looking for a user-friendly and efficient e-commerce platform akin to Amazon. It is designed for individuals seeking an intuitive platform for buying products online, with a wide selection and a seamless shopping experience."
+    "audience": "This application caters to online shoppers seeking an e-commerce platform with a focus on a seamless shopping cart and secure payment experience. Designed for individuals who appreciate a wide selection and a user-friendly interface, the project demonstrates expertise in implementing advanced features like Stripe payment integration."
   }
 }

@@ -1,10 +1,10 @@
 {
   "spotify": {
     "title": "Spotify-Inspired Music Streaming App",
-    "description": "A Spotify-inspired music streaming application developed using React.js and Firebase, offering an immersive and personalized music listening experience.",
-    "purpose": "The Spotify-like music streaming app was built to deliver an enjoyable and personalized music streaming experience. Leveraging Firebase as the backend, the aim was to create a platform where users can discover, listen to, and organize their favorite music seamlessly.",
+    "description": "A Spotify-inspired music streaming application developed using Next.js, Next auth and Supabase, offering an immersive and personalized music listening experience.",
+    "purpose": "The Spotify-like music streaming app was built to deliver an enjoyable and personalized music streaming experience. Leveraging Supabase as the backend, the aim was to create a platform where users can add their own mp3 files, and organize their favorite music seamlessly.",
     "features": [
-      "User Authentication: Secure authentication using Firebase Authentication to provide personalized music recommendations and playlists.",
+      "User Authentication: Secure authentication using Next Auth to provide personalized music recommendations and playlists.",
       "Music Catalog: A vast and diverse music catalog, allowing users to explore and discover their preferred tracks and artists.",
       "Personalized Playlists: Create and manage custom playlists based on music preferences and mood.",
       "Seamless Playback: Smooth and uninterrupted music playback with a user-friendly and intuitive audio player.",
