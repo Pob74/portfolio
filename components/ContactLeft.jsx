@@ -3,7 +3,7 @@ import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa"
 import { BsPersonLinesFill } from "react-icons/bs"
 import Image from "next/image"
 import { motion } from "framer-motion"
-import contactImage from "/public/assets/contact.avif"
+import contactImage from "/public/assets/contact.webp"
 import Link from "next/link"
 import { AiOutlineMail } from "react-icons/ai"
 
