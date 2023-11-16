@@ -5,7 +5,6 @@ import React from "react"
 import { motion } from "framer-motion"
 
 function ProjectItem({ image, title, framework, projectUrl, name }) {
-  console.log(name)
   return (
     <motion.div
       initial={{ opacity: 0 }}

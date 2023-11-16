@@ -2,24 +2,8 @@ import Image from "next/image"
 import React from "react"
 import { motion } from "framer-motion"
 
-function SkillItem({ image, width, height, title, alt, fill, relative, icon }) {
-  const relativeClass = relative
-    ? "m-auto w-[64px] h-[64px] relative"
-    : "m-auto w-[64px] h-[64px]"
-
-  const imageComp = icon ? (
-    icon
-  ) : (
-    <Image
-      src={image}
-      width={width}
-      height={height}
-      alt={alt}
-      fill={fill}
-      className="h-auto w-auto"
-      sizes="100vw"
-    />
-  )
+function SkillItem({ image, title, alt }) {
+  const imageData = <Image src={image} alt={alt} fill sizes="100vw" />
 
   return (
     <motion.div
@@ -31,7 +15,7 @@ function SkillItem({ image, width, height, title, alt, fill, relative, icon }) {
       className="p-6 shadow-xl rounded-xl "
     >
       <div className="grid grid-cols-2 gap-4 justify-center items-center ">
-        <div className={relativeClass}>{imageComp}</div>
+        <div className="m-auto w-[64px] h-[64px] relative">{imageData}</div>
         <div className="flex flex-col items-center justify-center ">
           <h3>{title}</h3>
         </div>

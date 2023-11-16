@@ -21,61 +21,24 @@ function Skills() {
           What I Can Do{" "}
         </motion.h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <SkillItem
-            image="/assets/html.svg"
-            width={64}
-            height={0}
-            title="HTML"
-            alt="html"
-          />
-          <SkillItem
-            image="/assets/css.svg"
-            width={42}
-            height={0}
-            title="CSS"
-            alt="css"
-          />
-          <SkillItem
-            image="/assets/react.png"
-            width={64}
-            height={0}
-            title="REACT"
-            alt="react"
-          />
-          <SkillItem
-            image="/assets/nextjs.svg"
-            width={64}
-            height={0}
-            title="NEXTJS"
-            alt="angular"
-          />
+          <SkillItem image="/assets/html.svg" title="HTML" alt="html" />
+          <SkillItem image="/assets/css.svg" title="CSS" alt="css" />
+          <SkillItem image="/assets/react.png" title="REACT" alt="react" />
+          <SkillItem image="/assets/nextjs.svg" title="NEXTJS" alt="angular" />
           <SkillItem
             image="/assets/firebase.png"
             title="FIREBASE"
             alt="firebase"
-            fill={true}
-            relative={true}
           />
+          <SkillItem image="/assets/mysql.svg" title="MYSQL" alt="mysql" />
           <SkillItem
-            image="/assets/mysql.png"
-            width={64}
-            height={0}
-            title="MYSQL"
-            alt="mysql"
-          />
-          <SkillItem
-            icon={<AiFillGithub size={64} />}
+            // icon={<AiFillGithub size={64} />}
+            image="/assets/github.svg"
             title="GITHUB"
             alt="github"
           />
 
-          <SkillItem
-            image="/assets/redux.png"
-            width={64}
-            height={0}
-            title="REDUX"
-            alt="redux"
-          />
+          <SkillItem image="/assets/redux.png" title="REDUX" alt="redux" />
         </div>
       </div>
     </div>
