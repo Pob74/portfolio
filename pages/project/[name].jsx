@@ -42,7 +42,7 @@ function ProductInfo() {
   const getExternalProjectURL = (projectName) => {
     const projectURLs = {
       amazon: "https://amazon-lookalike.vercel.app/",
-      netflix: "https://netflix-clone-psi.vercel.app/",
+      netflix: "https://netflix-lookalike-ten.vercel.app/",
       spotify: "https://music-controller-sand.vercel.app/",
       journal: "https://your-journal.vercel.app/"
     }

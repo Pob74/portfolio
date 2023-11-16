@@ -33,7 +33,7 @@ function About() {
             }}
             className="py-2 text-gray-300 "
           >
-            I am not your typical developer
+            I might be your future developer
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}

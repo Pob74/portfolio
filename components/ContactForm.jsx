@@ -38,19 +38,29 @@ function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+
+    // Check if the button is disabled
+    if (isDisabled) {
+      return // Do nothing if the button is disabled
+    }
+
     setState((prev) => ({
       ...prev,
       isLoading: true
     }))
+
     try {
       await sendContactForm(values)
       setIsSent(true)
       setState(initState)
+      setTimeout(() => {
+        setIsSent(false)
+        setIsDisabled(true)
+      }, 2000)
     } catch (error) {
       setState((prev) => ({
         ...prev,
         isLoading: false,
-
         error: error.message
       }))
     }

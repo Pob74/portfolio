@@ -3,9 +3,9 @@ import Image from "next/image"
 import React from "react"
 import projectImage from "../public/assets/Screenshot.png"
 import jurnalImage from "../public/assets/jurnal.png"
-import netflixImage from "../public/assets/netflix.png"
-import spotifyImage from "../public/assets/spotify.png"
-import amazonImage from "../public/assets/amazon.png"
+import netflixImage from "../public/assets/NetflixPage.png"
+import spotifyImage from "../public/assets/SpotifyPage.png"
+import amazonImage from "../public/assets/AmazonPage.png"
 import Link from "next/link"
 import ProjectItem from "./ProjectItem"
 import { motion } from "framer-motion"
@@ -35,7 +35,7 @@ function Projects() {
           <ProjectItem
             image={netflixImage}
             title="Netflix Clone"
-            framework="React JS"
+            framework="Next JS"
             projectUrl="/project"
             name="netflix"
           />
