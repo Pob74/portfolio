@@ -56,7 +56,7 @@ function Nav() {
       <nav
         className={
           shadow
-            ? "fixed w-full h-20 shadow-xl z-[100] bg-[#1B2430]"
+            ? "fixed w-full h-20 shadow-xl z-[100] dark:bg-[#1B2430]"
             : "fixed w-full h-20  z-[100] "
         }
       >

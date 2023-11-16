@@ -56,8 +56,8 @@ function ProductInfo() {
 
         <div className="mb-6 flex flex-col gap-6">
           <h3 className="text-xl font-bold mb-2">{projectData.title}</h3>
-          <p className="text-gray-300 mb-2">{projectData.description}</p>
-          <p className="text-gray-300 mb-2">{projectData.purpose}</p>
+          <p className="dark:text-gray-300 mb-2">{projectData.description}</p>
+          <p className="dark:text-gray-300 mb-2">{projectData.purpose}</p>
           <ol className="list-disc ml-6">
             {projectData.features.map((feature, index) => (
               <li className="mb-1 cursor-text " key={index}>

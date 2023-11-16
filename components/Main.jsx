@@ -26,16 +26,16 @@ function Main() {
       </motion.div>
       <div className="max-w-[1240px] w-full h-[calc(100vh-80px)] m-auto p-12 lg:p-2 flex justify-center items-center ">
         <div>
-          <p className="uppercase text-sm tracking-widest text-gray-400 mt-16 md:mt-0 ">
+          <p className="uppercase text-sm tracking-widest dark:text-gray-400 mt-16 md:mt-0 ">
             Let&rsquo;s build something together
           </p>
-          <h1 className="py-4 text-gray-300">
+          <h1 className="py-4 dark:text-gray-300">
             Hi, I am <span className="text-[#816797]">Zeljko</span>
           </h1>
-          <h2 className="animate-pulse py-4 text-gray-400">
+          <h2 className="animate-pulse py-4 dark:text-gray-400">
             A Front-End Web Developer
           </h2>
-          <p className="py-4 text-gray-300 max-w-[70%] m-auto">
+          <p className="py-4 dark:text-gray-300 max-w-[70%] m-auto">
             I am an enthusiastic Front-End Web Developer based in Sweden with a
             genuine passion for captivating web design.
           </p>

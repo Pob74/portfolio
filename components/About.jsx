@@ -31,7 +31,7 @@ function About() {
               opacity: 1,
               transition: { duration: 2, delay: 0.3 }
             }}
-            className="py-2 text-gray-300 "
+            className="py-2 dark:text-gray-300 "
           >
             I might be your future developer
           </motion.p>
@@ -41,7 +41,7 @@ function About() {
               opacity: 1,
               transition: { duration: 2, delay: 0.3 }
             }}
-            className="py-2 text-gray-300 "
+            className="py-2 dark:text-gray-300 "
           >
             From an early age, my passion for problem-solving drove me to
             deconstruct and repair broken items. This curiosity propelled me to
@@ -58,7 +58,7 @@ function About() {
               opacity: 1,
               transition: { duration: 2, delay: 0.3 }
             }}
-            className="py-2 text-gray-300 "
+            className="py-2 dark:text-gray-300 "
           >
             This problem-solving mindset permeates every aspect of my life,
             driving my personal and professional growth. It has been the
@@ -71,7 +71,7 @@ function About() {
               opacity: 1,
               transition: { duration: 2, delay: 0.3 }
             }}
-            className="py-2 text-gray-300 "
+            className="py-2 dark:text-gray-300 "
           >
             My formative years in Croatia were marred by the Balkan war during
             the 90s. Despite the adversity, this experience instilled in me a
@@ -86,7 +86,7 @@ function About() {
               opacity: 1,
               transition: { duration: 2, delay: 0.3 }
             }}
-            className="py-2 text-gray-300 "
+            className="py-2 dark:text-gray-300 "
           >
             Following the war, I made the life-changing decision to relocate to
             Sweden—a country brimming with opportunities. To establish financial
@@ -99,7 +99,7 @@ function About() {
               opacity: 1,
               transition: { duration: 2, delay: 0.3 }
             }}
-            className="py-2 text-gray-300 "
+            className="py-2 dark:text-gray-300 "
           >
             However, my ambition yearned for more substantial endeavors and
             greater responsibilities. Hence, I took the leap and embarked on my
@@ -112,7 +112,7 @@ function About() {
               opacity: 1,
               transition: { duration: 2, delay: 0.3 }
             }}
-            className="py-2 text-gray-300 "
+            className="py-2 dark:text-gray-300 "
           >
             During my leisure time, I delved into computer programming, which
             captivated my interest from the outset. It became increasingly
@@ -126,7 +126,7 @@ function About() {
               opacity: 1,
               transition: { duration: 2, delay: 0.3 }
             }}
-            className="py-2 text-gray-400 underline cursor-pointer "
+            className="py-2 dark:text-gray-400 underline cursor-pointer "
           >
             <Link href="/#projects"> Check out some of my projects</Link>
           </motion.p>

@@ -14,7 +14,7 @@ html {
 
 @layer base {
   body {
-    @apply bg-[#1B2430] text-[#D6D5A8] tracking-wide;
+    @apply bg-[#ecf0f3] text-[#1f2937] dark:bg-[#1B2430] dark:text-[#D6D5A8] tracking-wide;
   }
   h1,
   h2,
